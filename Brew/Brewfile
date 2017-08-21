@@ -11,11 +11,13 @@ brew 'gpg'
 brew 'gpg-agent'
 brew 'graphviz'
 
+brew 'mas'
 brew 'mc'
 brew 'mercurial'
 brew 'mongodb'
 
 brew 'pinentry-mac'
+brew 'reattach-to-user-namespace'
 brew 'socat'
 brew 'tmux'
 brew 'tree'

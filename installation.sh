@@ -1,10 +1,13 @@
 source 'base.sh'
 
 notify "Installing Brew"
-$DIR/SetupTools/Brew.sh
+$DIR/Wizards/Brew.sh
 
 notify "Installing Brew Bundles"
 brew bundle --file=Brew/Brewfile
 
 notify "Installing OhMyZsh"
-$DIR/SetupTools/OhMyZsh.sh
+$DIR/Wizards/OhMyZsh.sh
+
+notify "Installing Tmux"
+$DIR/Wizards/Tmux.sh
