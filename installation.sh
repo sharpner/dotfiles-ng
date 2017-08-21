@@ -20,3 +20,6 @@ $DIR/Wizards/Tmux.sh
 
 notify "Mapping caps to escape"
 $DIR/Wizards/CapsToEscape.sh
+
+notify "Installing neovim"
+$DIR/Wizards/NeoVim.sh

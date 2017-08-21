@@ -16,6 +16,8 @@ brew 'mc'
 brew 'mercurial'
 brew 'mongodb'
 
+brew 'neovim'
+
 brew 'pinentry-mac'
 brew 'reattach-to-user-namespace'
 brew 'socat'
