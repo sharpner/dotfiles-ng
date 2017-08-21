@@ -1,5 +1,10 @@
 #!/bin/bash
 source 'base.sh'
+LOCK=mac-settings.lock
+
+if [ -f $LOCK_DIR/$LOCK ] ; then
+    exit 0
+fi
 
 #setup machines hostname
 echo "Input hostname for this machine"
@@ -24,3 +29,4 @@ sudo defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 # don't automatically open photos
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
+touch $LOCK_DIR/$LOCK
