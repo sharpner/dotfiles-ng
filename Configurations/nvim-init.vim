@@ -80,5 +80,24 @@ let g:go_highlight_build_constraints = 1
 let g:go_fmt_command = "goimports"
 let g:go_fmt_fail_silently = 1
 
+" used commands
+nnoremap <leader>bb :Buffers<CR>
+nnoremap <leader>ff :Files<CR>
+
+
+let g:esearch = {
+    \ 'adapter':    'ag',
+    \ 'backend':    'nvim',
+    \ 'out':        'win',
+    \ 'batch_size': 1000,
+    \ 'use':        ['visual', 'hlsearch', 'last'],
+    \}
+" fix: remap my file mapping. This plugin always makes it's default mappings ..
+autocmd VimEnter * nmap <leader>ff :Files<CR>
+silent! call esearch#map('<leader>fe', 'esearch')
+" Start esearch prompt autofilled with one of g:esearch.use initial patterns
+" Start esearch autofilled with a word under the cursor
+silent! call esearch#map('<leader>fw', 'esearch-word-under-cursor')
+
 nmap <leader>m :NERDTreeToggle<CR>
 nmap <F2> :NERDTreeFind<CR>
