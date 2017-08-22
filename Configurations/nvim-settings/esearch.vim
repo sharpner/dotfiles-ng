@@ -5,4 +5,12 @@ silent! call esearch#map('<leader>fe', 'esearch')
 " Start esearch autofilled with a word under the cursor
 silent! call esearch#map('<leader>fw', 'esearch-word-under-cursor')
 
+let g:esearch = {
+    \ 'adapter':    'ag',
+    \ 'backend':    'nvim',
+    \ 'out':        'win',
+    \ 'batch_size': 1000,
+    \ 'use':        ['visual', 'hlsearch', 'last'],
+    \}
+
 

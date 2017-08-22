@@ -1,27 +1,26 @@
 " plugin setup
 call plug#begin('~/.vim/plugged')
 
-" fuzzy setup
+" ################ global plugins
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-
-" editorconfig
-Plug 'editorconfig/editorconfig-vim', { 'on': [] }
-
-" vim-go is just awesome
-Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }
-
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
 Plug 'Xuyuanp/nerdtree-git-plugin'
-
 Plug 'Lokaltog/vim-easymotion'
 Plug 'terryma/vim-multiple-cursors'
-
 Plug 'eugen0329/vim-esearch'
+Plug 'editorconfig/editorconfig-vim', { 'on': [] }
+" display vim marks
+Plug 'kshenoy/vim-signature'
 
-" colorschemes
+" ################ colorscheme
 Plug 'morhetz/gruvbox'
+
+" ################ go specific
+Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }
+
+" ################ js specific
 
 call plug#end()
 
@@ -29,13 +28,4 @@ call plug#end()
 for f in split(glob('~/.config/nvim/nvim-settings/*.vim'), '\n')
     exe 'source' f
 endfor
-
-let g:esearch = {
-    \ 'adapter':    'ag',
-    \ 'backend':    'nvim',
-    \ 'out':        'win',
-    \ 'batch_size': 1000,
-    \ 'use':        ['visual', 'hlsearch', 'last'],
-    \}
-
 
