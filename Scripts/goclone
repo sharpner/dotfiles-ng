@@ -1,0 +1,49 @@
+#/!bin/bash
+repository=github.com
+
+if [ -z "$GOPATH" ] ; then
+  echo '$GOPATH not set.'
+  exit 1
+fi
+
+cd $GOPATH
+
+if [ $# -lt 1 ] ; then
+  echo "Usage: goclone group/project [repository]"
+  exit 1
+fi
+
+if [ ! -z "$2" ] ; then
+  repository=$2
+fi
+
+group=`echo $1 | cut -f1 -d"/"`
+project=`echo $1 | cut -f2 -d"/"`
+
+if [ -z "$project" ] || [ -z  "$group" ] ; then
+  echo "Usage: goclone group/project [repository]"
+  exit 1
+fi
+
+repo=$1
+target=$GOPATH/src/$repository/$group
+
+if [ ! -d $target ] ; then
+  mkdir -p $target
+
+  echo "Created folder "$target
+fi
+
+cd $target
+
+git clone git@$repository:$repo.git
+
+if [ $? -ne 0 ] ; then
+  echo "Could not clone repository"
+  exit 1
+fi
+
+symlink=$project
+
+cd $GOPATH
+ln -s $target/$project _$symlink

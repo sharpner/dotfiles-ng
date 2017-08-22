@@ -29,3 +29,6 @@ $DIR/Wizards/CapsToEscape.sh
 
 notify "Installing neovim"
 $DIR/Wizards/NeoVim.sh
+
+notify "Installing go development utilities"
+$DIR/Wizards/GoDev.sh

@@ -6,6 +6,7 @@ function notify {
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 TARGET_CONFIG_DIR=~/.dotfiles-config
 CONFIG_DIR=$DIR/Configurations
+SCRIPTS_DIR=$DIR/Scripts
 LOCK_DIR=$DIR/Locks
 
 [ -d $TARGET_CONFIG_DIR ] || mkdir $TARGET_CONFIG_DIR
