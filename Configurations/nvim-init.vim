@@ -23,7 +23,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
 " view vim registers e.g. for pasting
 Plug 'junegunn/vim-peekaboo'
-
+" find and replace helper
+Plug 'junegunn/vim-fnr'
 " ################ colorscheme
 Plug 'morhetz/gruvbox'
 
