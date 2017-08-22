@@ -18,6 +18,11 @@ Plug 'kshenoy/vim-signature'
 " realtime search
 Plug 'junegunn/vim-pseudocl'
 Plug 'junegunn/vim-oblique'
+" git integration
+Plug 'tpope/vim-fugitive'
+Plug 'junegunn/gv.vim'
+" view vim registers e.g. for pasting
+Plug 'junegunn/vim-peekaboo'
 
 " ################ colorscheme
 Plug 'morhetz/gruvbox'
