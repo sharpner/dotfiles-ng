@@ -11,6 +11,8 @@ Plug 'Lokaltog/vim-easymotion'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'eugen0329/vim-esearch'
 Plug 'editorconfig/editorconfig-vim', { 'on': [] }
+" change working directory to project working directory
+Plug 'airblade/vim-rooter'
 " display vim marks
 Plug 'kshenoy/vim-signature'
 
