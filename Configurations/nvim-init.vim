@@ -57,6 +57,10 @@ Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }
 Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make'}
 
 " ################ js specific
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+Plug 'mxw/vim-jsx', { 'for': 'javascript' }
+Plug 'flowtype/vim-flow', { 'for': 'javascript' }
+
 " ############### Dockerfile specific
 Plug 'ekalinin/Dockerfile.vim', {'for' : 'Dockerfile'}
 
