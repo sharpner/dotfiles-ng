@@ -18,6 +18,8 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'terryma/vim-multiple-cursors'
 
+Plug 'eugen0329/vim-esearch'
+
 " colorschemes
 Plug 'morhetz/gruvbox'
 
