@@ -1,3 +1,4 @@
+set relativenumber
 set encoding=utf-8 nobomb
 set binary
 
