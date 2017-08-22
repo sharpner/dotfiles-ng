@@ -24,6 +24,8 @@ Plug 'junegunn/gv.vim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 " view vim registers e.g. for pasting
 Plug 'junegunn/vim-peekaboo'
+" tmux integration
+Plug 'christoomey/vim-tmux-navigator'
 " find and replace helper
 Plug 'junegunn/vim-fnr'
 " deoplote setup
