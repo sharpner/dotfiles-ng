@@ -2,7 +2,7 @@
 source 'base.sh'
 
 function setup {
-    git clone git@github.com:robbyrussell/oh-my-zsh.git ~/.oh-my-zsh && \
+    git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh && \
     ln -sF $CONFIG_DIR/zshrc ~/.zshrc && \
     chsh -s /bin/zsh
     return $?
