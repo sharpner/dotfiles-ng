@@ -19,6 +19,7 @@ brew 'mongodb'
 brew 'neovim'
 
 brew 'pinentry-mac'
+brew 'python3'
 brew 'reattach-to-user-namespace'
 brew 'socat'
 brew 'tmux'

@@ -4,6 +4,8 @@ source 'base.sh'
 function setup {
     curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim && \
+    sudo gem update neovim
+
     mkdir -p ~/.config/nvim/
     mkdir -p ~/.vim/backups
     mkdir -p ~/.vim/swaps
