@@ -15,6 +15,9 @@ Plug 'editorconfig/editorconfig-vim', { 'on': [] }
 Plug 'airblade/vim-rooter'
 " display vim marks
 Plug 'kshenoy/vim-signature'
+" realtime search
+Plug 'junegunn/vim-pseudocl'
+Plug 'junegunn/vim-oblique'
 
 " ################ colorscheme
 Plug 'morhetz/gruvbox'
