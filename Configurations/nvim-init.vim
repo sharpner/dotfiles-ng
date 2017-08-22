@@ -28,7 +28,7 @@ Plug 'junegunn/vim-peekaboo'
 Plug 'junegunn/vim-fnr'
 " deoplote setup
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-
+Plug 'w0rp/ale'
 " ################ colorscheme & eyecandy
 Plug 'morhetz/gruvbox'
 Plug 'ryanoasis/vim-devicons'
