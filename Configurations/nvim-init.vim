@@ -23,67 +23,10 @@ Plug 'morhetz/gruvbox'
 
 call plug#end()
 
-
-
-" configuration
-let g:gruvbox_improved_warnings=1
-let g:gruvbox_italic=1
-let g:gruvbox_contrast_dark='soft'
-let g:gruvbox_contrast_light='hard'
-set background=dark
-colo gruvbox
-
-" vim tricks
-for char in [ '_', '.', ':', ',', ';', '<bar>', '/', '<bslash>', '*', '+', '%' ]
-  execute 'xnoremap i' . char . ' :<C-u>normal! T' . char . 'vt' . char . '<CR>'
-  execute 'onoremap i' . char . ' :normal vi' . char . '<CR>'
-  execute 'xnoremap a' . char . ' :<C-u>normal! F' . char . 'vf' . char . '<CR>'
-  execute 'onoremap a' . char . ' :normal va' . char . '<CR>'
+" Read all configs in nvim-settings
+for f in split(glob('~/.config/nvim/nvim-settings/*.vim'), '\n')
+    exe 'source' f
 endfor
-
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
-
-autocmd BufWritePre * :%s/\s\+$//e
-
-set encoding=utf-8 nobomb
-set binary
-" set noeol
-set backupdir=~/.vim/backups
-set directory=~/.vim/swaps
-if exists("&undodir")
-    set undodir=~/.vim/undo
-endif
-
-set undofile   " Maintain undo history between sessions
-set encoding=utf8
-set nowrap
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
-set expandtab
-
-" default config
-let mapleader = ','
-let maplocalleader = ','
-
-" go settings
-
-let g:go_highlight_functions = 1
-let g:go_highlight_methods = 1
-let g:go_highlight_fields = 1
-let g:go_highlight_types = 1
-let g:go_highlight_operators = 1
-let g:go_highlight_build_constraints = 1
-let g:go_fmt_command = "goimports"
-let g:go_fmt_fail_silently = 1
-
-" used commands
-nnoremap <leader>bb :Buffers<CR>
-nnoremap <leader>ff :Files<CR>
-
 
 let g:esearch = {
     \ 'adapter':    'ag',
@@ -92,12 +35,5 @@ let g:esearch = {
     \ 'batch_size': 1000,
     \ 'use':        ['visual', 'hlsearch', 'last'],
     \}
-" fix: remap my file mapping. This plugin always makes it's default mappings ..
-autocmd VimEnter * nmap <leader>ff :Files<CR>
-silent! call esearch#map('<leader>fe', 'esearch')
-" Start esearch prompt autofilled with one of g:esearch.use initial patterns
-" Start esearch autofilled with a word under the cursor
-silent! call esearch#map('<leader>fw', 'esearch-word-under-cursor')
 
-nmap <leader>m :NERDTreeToggle<CR>
-nmap <F2> :NERDTreeFind<CR>
+
