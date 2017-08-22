@@ -37,6 +37,10 @@ Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make'}
 
 " ################ js specific
 
+" ###############  markdown specific
+Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
+Plug 'suan/vim-instant-markdown', { 'for': 'markdown', 'do': 'yarn global add instant-markdown-d' }
+
 call plug#end()
 
 " Read all configs in nvim-settings
