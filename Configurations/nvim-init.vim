@@ -25,11 +25,15 @@ Plug 'junegunn/gv.vim'
 Plug 'junegunn/vim-peekaboo'
 " find and replace helper
 Plug 'junegunn/vim-fnr'
+" deoplote setup
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+
 " ################ colorscheme
 Plug 'morhetz/gruvbox'
 
 " ################ go specific
 Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }
+Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make'}
 
 " ################ js specific
 
