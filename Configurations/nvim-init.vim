@@ -21,6 +21,7 @@ Plug 'junegunn/vim-oblique'
 " git integration
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 " view vim registers e.g. for pasting
 Plug 'junegunn/vim-peekaboo'
 " find and replace helper
@@ -28,8 +29,10 @@ Plug 'junegunn/vim-fnr'
 " deoplote setup
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
-" ################ colorscheme
+" ################ colorscheme & eyecandy
 Plug 'morhetz/gruvbox'
+Plug 'ryanoasis/vim-devicons'
+Plug 'junegunn/vim-emoji'
 
 " ################ go specific
 Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }
