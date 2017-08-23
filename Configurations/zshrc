@@ -1,5 +1,6 @@
 #  zmodload zsh/zprof
 plugins=(git osx vi-mode per-directory-history dirhistory)
+
 export ZSH_THEME="geoffgarside"
 export ZSH=~/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
@@ -38,3 +39,7 @@ export TERM=screen-256color-bce
 export SAVEHIST=10000
 export HISTSIZE=10000
 export HOMEBREW_NO_ANALYTICS=1
+
+if [ "$TMUX" = "" ]; then
+    tmux attach -t alacritty || tmux new -s alacritty
+fi
