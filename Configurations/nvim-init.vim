@@ -60,6 +60,7 @@ Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make'}
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'mxw/vim-jsx', { 'for': 'javascript' }
 Plug 'flowtype/vim-flow', { 'for': 'javascript' }
+Plug 'elzr/vim-json', {'for' : 'json'}
 
 " ############### Dockerfile specific
 Plug 'ekalinin/Dockerfile.vim', {'for' : 'Dockerfile'}
