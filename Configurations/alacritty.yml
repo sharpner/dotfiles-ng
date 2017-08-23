@@ -268,5 +268,5 @@ key_bindings:
 # - Paste
 # - PasteSelection
 # - Copy (TODO)
-hide_cursor_when_typing: false
+hide_cursor_when_typing: true
 
