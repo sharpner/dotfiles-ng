@@ -1,5 +1,5 @@
 #  zmodload zsh/zprof
-plugins=(git osx vi-mode per-directory-history dirhistory)
+plugins=(z git osx vi-mode per-directory-history dirhistory)
 
 export ZSH_THEME="geoffgarside"
 export ZSH=~/.oh-my-zsh
