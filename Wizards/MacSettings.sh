@@ -52,6 +52,6 @@ sudo nvram SystemAudioVolume=%80
 
 # keyboard delay
 defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
-defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
+defaults write -g KeyRepeat -int 2 # normal minimum is 2 (30 ms)
 
 touch $LOCK_DIR/$LOCK
