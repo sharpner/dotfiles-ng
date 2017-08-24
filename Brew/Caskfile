@@ -1,4 +1,3 @@
-cask 'iterm2'
 cask 'vlc'
 cask 'beamer'
 cask 'vagrant'
