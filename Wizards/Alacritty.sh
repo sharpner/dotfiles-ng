@@ -12,7 +12,7 @@ function setup {
     cargo build --release && \
     make app && \
     cp -r target/release/osx/Alacritty.app /Applications/Alacritty.app && \
-    curl -L https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraMono/Regular/complete/Fura%20Mono%20Regular%20Nerd%20Font%20Complete%20Mono.otf -o ~/Library/Fonts/Fura Mono Regular Nerd Font Complete Mono.otf
+    curl -L https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraMono/Regular/complete/Fura%20Mono%20Regular%20Nerd%20Font%20Complete%20Mono.otf\?raw=true -o ~/Library/Fonts/Fura\ Mono\ Regular\ Nerd\ Font\ Complete\ Mono.otf
     return $?
 }
 
