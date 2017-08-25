@@ -6,7 +6,7 @@ export ZSH=~/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
+bindkey '\e[3~' delete-char
 # disable zsh autocompletion
 setopt autolist
 setopt noautomenu
