@@ -13,11 +13,10 @@ function setup {
     make app && \
     cp -r target/release/osx/Alacritty.app /Applications/Alacritty.app && \
     mkdir -p ~/.config/alacritty && \
-    ln -sF $CONFIG_DIR/alacritty.yml ~/.config/alacritty/alacritty.yml &&
+    ln -F $CONFIG_DIR/alacritty.yml ~/.config/alacritty/alacritty.yml &&
     curl -L https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraMono/Regular/complete/Fura%20Mono%20Regular%20Nerd%20Font%20Complete%20Mono.otf\?raw=true -o ~/Library/Fonts/Fura\ Mono\ Regular\ Nerd\ Font\ Complete\ Mono.otf
     return $?
 }
 
 LOCK=alacritty.lock
 [ -f $LOCK_DIR/$LOCK ] || setup && touch $LOCK_DIR/$LOCK
-
