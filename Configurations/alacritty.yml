@@ -263,5 +263,8 @@ key_bindings:
   - { key: Key8,     mods: Alt,     chars: "\x7B"                        } # [
   - { key: Key9,     mods: Alt,     chars: "\x7D"                        } # ]
   - { key: Delete,                  chars: "\e[3~"                        } # delete
+  - { key: Equals,                  chars: "\xB4"                        } # ´
+  - { key: Equals,   mods: Shift,   chars: "\x60"                        } # `
+  - { key: Space,    mods: Alt,     chars: "⦸"                           } # ⦸
 
 hide_cursor_when_typing: true
