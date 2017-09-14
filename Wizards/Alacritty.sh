@@ -12,7 +12,7 @@ function setup {
     # patch icon :)
     wget https://github.com/jwilm/alacritty/files/1155751/icons.zip && \
     unzip icons.zip && \
-    cp $FOLDER/full_blue.icns $FOLDER/assets/osx/Alacritty.app/Contents/Resources/alacritty.icns && \
+    cp $FOLDER/original.icns $FOLDER/assets/osx/Alacritty.app/Contents/Resources/alacritty.icns && \
     cargo build --release && \
     make app && \
     cp -r target/release/osx/Alacritty.app ~/Applications/Alacritty.app && \
