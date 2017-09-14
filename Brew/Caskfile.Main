@@ -1,0 +1,3 @@
+cask 'vagrant'
+cask 'virtualbox'
+cask 'karabiner-elements'

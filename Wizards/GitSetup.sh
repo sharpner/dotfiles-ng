@@ -10,6 +10,6 @@ git config --global gpg.program gpg
 git config --global core.editor nvim
 git config --global core.excludesfile $CONFIG_DIR/gitignore_global
 
-gpg --allow-secret-key-import --import $GPG_KEY
+gpg --allow-secret-key-import --import "$GPG_KEY"
 mkdir -p ~/.gnupg
 cp $CONFIG_DIR/gpg-agent.conf ~/.gnupg/

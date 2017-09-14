@@ -28,7 +28,7 @@ alias top="top -o cpu"
 alias cd='cd -P'
 alias vim=nvim
 
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; git -C ~/dotfiles pull --rebase'
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; git -C ~/.dotfiles-ng pull --rebase'
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
 alias vnc='open /System/Library/CoreServices/Applications/Screen\ Sharing.app/'

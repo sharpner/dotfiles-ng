@@ -1,7 +1,4 @@
 cask 'vlc'
 cask 'beamer'
-cask 'vagrant'
-cask 'virtualbox'
 cask 'little-snitch'
 cask 'micro-snitch'
-cask 'karabiner-elements'
