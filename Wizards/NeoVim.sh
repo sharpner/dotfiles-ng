@@ -8,6 +8,7 @@ function setup {
     mkdir -p ~/.config/nvim && \
     mkdir -p ~/.vim/backups && \
     mkdir -p ~/.vim/swaps && \
+    mkdir -p ~/.vim/snippets && \
     mkdir -p ~/.vim/undo && \
 
     pip3 install neovim && \
