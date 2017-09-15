@@ -5,6 +5,8 @@ function setup {
     mkdir -p ~/Development/Go && \
     mkdir -p ~/bin && \
     ln -sF $SCRIPTS_DIR/goclone ~/bin/goclone && \
+    go get -u gopkg.in/alecthomas/gometalinter.v1 && \
+    gometalinter --install && \
     go get -u -a github.com/tools/godep
 
     return $?
