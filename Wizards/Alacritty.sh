@@ -9,6 +9,8 @@ function setup {
     rustup override set stable && \
     rustup update stable && \
     cd $FOLDER && \
+    # patch mac os x fallback font
+    curl https://github.com/algesten/alacritty/commit/1ecd26ef0467b367d8c59522ca0c60004f7a6436.patch | git apply
     # patch icon :)
     wget https://github.com/jwilm/alacritty/files/1155751/icons.zip && \
     unzip icons.zip && \
