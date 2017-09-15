@@ -7,6 +7,7 @@ function setup {
     ln -sF $SCRIPTS_DIR/goclone ~/bin/goclone && \
     go get -u gopkg.in/alecthomas/gometalinter.v1 && \
     gometalinter --install && \
+    go get -u -a golang.org/x/tools/cmd/godoc && \
     go get -u -a github.com/tools/godep
 
     return $?
