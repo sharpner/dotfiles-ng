@@ -16,7 +16,7 @@ Plug 'mhinz/vim-startify'
 " snippets for all programming languages
 Plug 'honza/vim-snippets'
 Plug 'SirVer/ultisnips', { 'on': [] }
-"
+
 " change working directory to project working directory
 Plug 'airblade/vim-rooter'
 
@@ -57,6 +57,11 @@ Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }
 Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make'}
 
 " ################ js specific
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+Plug 'mxw/vim-jsx', { 'for': 'javascript' }
+Plug 'flowtype/vim-flow', { 'for': 'javascript' }
+Plug 'elzr/vim-json', {'for' : 'json'}
+
 " ############### Dockerfile specific
 Plug 'ekalinin/Dockerfile.vim', {'for' : 'Dockerfile'}
 
