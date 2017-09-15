@@ -5,5 +5,3 @@ let g:gruvbox_contrast_dark='soft'
 let g:gruvbox_contrast_light='hard'
 set background=dark
 colo gruvbox
-
-

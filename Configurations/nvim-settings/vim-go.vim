@@ -6,7 +6,6 @@ let g:ale_go_gometalinter_options = '
   \ --vendored-linters
   \ --disable=gas
   \ --disable=goconst
-  \ --disable=gocyclo
   \ '
 
 let g:ale_linters = {'javascript': ['eslint'], 'go': ['go build', 'gometalinter']}
@@ -25,6 +24,7 @@ let g:go_metalinter_enabled = [
       \ 'unconvert', 'varcheck', 'vet', 'vetshadow',
       \ ]
 
+let g:ale_open_list = 1
 let g:go_auto_type_info = 1
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1

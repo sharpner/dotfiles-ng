@@ -8,5 +8,3 @@ endfor
 
 " delete trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
-
-
