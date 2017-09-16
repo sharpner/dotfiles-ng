@@ -24,7 +24,7 @@ let g:go_metalinter_enabled = [
       \ 'unconvert', 'varcheck', 'vet', 'vetshadow',
       \ ]
 
-let g:ale_open_list = 1
+let g:ale_open_list = 0
 let g:go_auto_type_info = 1
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1

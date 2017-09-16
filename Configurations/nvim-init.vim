@@ -64,7 +64,7 @@ Plug 'flowtype/vim-flow', { 'for': 'javascript' }
 Plug 'elzr/vim-json', {'for' : 'json'}
 
 " ############### Dockerfile specific
-Plug 'ekalinin/Dockerfile.vim', {'for' : 'Dockerfile'}
+Plug 'ekalinin/Dockerfile.vim', { 'for' : 'Dockerfile' }
 
 " ###############  markdown specific
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
