@@ -67,7 +67,7 @@ Plug 'ekalinin/Dockerfile.vim', {'for' : 'Dockerfile'}
 
 " ###############  markdown specific
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
-Plug 'suan/vim-instant-markdown', { 'for': 'markdown', 'do': 'yarn global add instant-markdown-d' }
+Plug 'suan/vim-instant-markdown', { 'do': 'yarn global add instant-markdown-d' }
 
 call plug#end()
 
