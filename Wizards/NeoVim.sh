@@ -4,6 +4,7 @@ source 'base.sh'
 function setup {
     curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim && \
+    sudo gem install neovim && \
     sudo gem update neovim && \
     mkdir -p ~/.config/nvim && \
     mkdir -p ~/.vim/backups && \
@@ -11,6 +12,7 @@ function setup {
     mkdir -p ~/.vim/snippets && \
     mkdir -p ~/.vim/undo && \
 
+    pip2 install neovim && \
     pip3 install neovim && \
     # utf8 font for vim
     curl -L https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Knack%20Regular%20Nerd%20Font%20Complete.ttf -o ~/Library/Fonts/Knack\ Regular\ Nerd\ Font\ Complete.ttf && \
