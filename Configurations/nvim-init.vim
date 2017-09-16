@@ -12,6 +12,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'eugen0329/vim-esearch'
 Plug 'editorconfig/editorconfig-vim', { 'on': [] }
 Plug 'mhinz/vim-startify'
+Plug 'vimwiki/vimwiki'
 
 " snippets for all programming languages
 Plug 'honza/vim-snippets'
