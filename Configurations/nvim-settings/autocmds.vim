@@ -12,7 +12,6 @@ function! SearchFlowBin()
   endif
   if executable(local_flow)
     let g:flow#flowpath = local_flow
-    let g:deoplete#sources#flow#flow_bin = local_flow
     let g:ale_javascript_flow_executable = local_flow
   endif
 endfunction
