@@ -5,6 +5,8 @@ let g:flow#enable = 0
 let g:flow#omnifunc = 1
 let g:flow#autoclose = 1
 
+nmap gd :TernDef<CR>
+
 autocmd BufNewFile,BufRead,BufWritePost *.js call DetectFlow()
 
 function! DetectFlow()

@@ -47,6 +47,7 @@ Plug 'junegunn/vim-fnr'
 Plug 'roxma/nvim-completion-manager', { 'do': 'pip3 install --user neovim jedi mistune psutil setproctitle' }
 Plug 'roxma/nvim-cm-tern', { 'for': 'javascript', 'do': 'yarn install' }
 Plug 'roxma/ncm-flow', { 'for': 'javascript' }
+Plug 'ternjs/tern_for_vim', { 'do': 'yarn install', 'on': ['TernDef', 'TernDoc', 'TernDocBrowse', 'TernType', 'TernDefPreview', 'TernDefSplit', 'TernDefTab', 'TernRefs', 'TernRename'] }
 
 " linting setup
 Plug 'w0rp/ale'
