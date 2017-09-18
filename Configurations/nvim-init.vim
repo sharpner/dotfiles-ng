@@ -65,7 +65,7 @@ Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }
 " ################ js specific
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'mxw/vim-jsx', { 'for': 'javascript' }
-Plug 'flowtype/vim-flow', { 'for': 'javascript' }
+Plug 'wwwdata/vim-flow', { 'for': 'javascript' }
 Plug 'elzr/vim-json', {'for' : 'json'}
 
 " ############### Dockerfile specific
