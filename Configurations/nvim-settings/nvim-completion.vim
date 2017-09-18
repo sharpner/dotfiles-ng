@@ -4,6 +4,4 @@ let g:cm_sources_override = {
     \ 'buffer': {'priority': 100}
     \ }
 
-inoremap <expr><CR> (pumvisible()?(empty(v:completed_item)?"\<C-n>\<C-y>":"\<C-y>"):"\<CR>")
-imap <expr> <Plug>(expand_or_nl) (cm#completed_is_snippet() ? "\<C-U>":"\<CR>")
 set shortmess+=c
