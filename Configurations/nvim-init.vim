@@ -13,6 +13,7 @@ Plug 'eugen0329/vim-esearch'
 Plug 'editorconfig/editorconfig-vim', { 'on': [] }
 Plug 'mhinz/vim-startify'
 Plug 'vimwiki/vimwiki'
+Plug 'ervandew/supertab'
 
 " snippets for all programming languages
 Plug 'honza/vim-snippets'
@@ -42,8 +43,12 @@ Plug 'christoomey/vim-tmux-navigator'
 " find and replace helper
 Plug 'junegunn/vim-fnr'
 
-" deoplote setup
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" autocomplete setup
+Plug 'roxma/nvim-completion-manager', { 'do': 'pip3 install --user neovim jedi mistune psutil setproctitle' }
+Plug 'roxma/nvim-cm-tern', { 'for': 'javascript', 'do': 'yarn install' }
+Plug 'roxma/ncm-flow', { 'for': 'javascript' }
+
+" linting setup
 Plug 'w0rp/ale'
 
 " ################ colorscheme & eyecandy
@@ -55,7 +60,6 @@ Plug 'vim-airline/vim-airline-themes'
 
 " ################ go specific
 Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }
-Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make'}
 
 " ################ js specific
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
