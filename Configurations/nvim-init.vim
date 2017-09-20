@@ -14,6 +14,7 @@ Plug 'editorconfig/editorconfig-vim', { 'on': [] }
 Plug 'mhinz/vim-startify'
 Plug 'vimwiki/vimwiki'
 Plug 'ervandew/supertab'
+Plug 'tpope/vim-surround'
 
 " snippets for all programming languages
 Plug 'honza/vim-snippets'
