@@ -1,6 +1,14 @@
 #!/bin/bash
 source 'base.sh'
 
+FILENAME=alacritty.en.yml
+
+if [ "$KEYBOARD_LAYOUT" == "de" ]; then
+    if [ -f $CONFIG_DIR/$FILENAME ]; then
+        FILENAME=alacritty.de.yml
+    fi
+fi
+
 function setup {
     FOLDER=`mktemp -d`
     export PATH=$PATH:$HOME/.cargo/bin
@@ -19,7 +27,7 @@ function setup {
     make app && \
     cp -r target/release/osx/Alacritty.app ~/Applications/Alacritty.app && \
     mkdir -p ~/.config/alacritty && \
-    ln -F $CONFIG_DIR/alacritty.yml ~/.config/alacritty/alacritty.yml &&
+    ln -F $CONFIG_DIR/$FILENAME ~/.config/alacritty/alacritty.yml &&
     curl -L https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraMono/Regular/complete/Fura%20Mono%20Regular%20Nerd%20Font%20Complete%20Mono.otf\?raw=true -o ~/Library/Fonts/Fura\ Mono\ Regular\ Nerd\ Font\ Complete\ Mono.otf
     return $?
 }
