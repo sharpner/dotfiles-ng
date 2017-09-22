@@ -5,14 +5,11 @@ let g:flow#enable = 0
 let g:flow#omnifunc = 1
 let g:flow#autoclose = 1
 
-nmap gd :TernDef<CR>
-
 autocmd BufNewFile,BufRead,BufWritePost *.js call DetectFlow()
 
 function! DetectFlow()
   if getline(1) =~# '^\s*\/[/*]\s*@flow\>'
     " if flow is detected use flow jump to def instead
-    nmap gd :FlowJumpToDef<CR>
     set ft=javascript.jsx.flow
   end
 endfunction

@@ -1,0 +1,1 @@
+nmap gd :TernDef<CR>

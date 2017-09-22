@@ -17,8 +17,9 @@ function setup {
     # utf8 font for vim
     curl -L https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Knack%20Regular%20Nerd%20Font%20Complete.ttf -o ~/Library/Fonts/Knack\ Regular\ Nerd\ Font\ Complete.ttf && \
 
-    ln -sF $CONFIG_DIR/nvim-settings ~/.config/nvim/ && \
+    ln -sF $CONFIG_DIR/nvim-settings ~/.config/nvim && \
     ln -sF $CONFIG_DIR/nvim-init.vim ~/.config/nvim/init.vim && \
+    ln -sF $CONFIG_DIR/nvim-ftplugin ~/.config/nvim/ftplugin && \
 
     nvim +PlugUpdate +silent +qall
     return $?
