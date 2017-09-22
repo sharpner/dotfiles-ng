@@ -12,6 +12,7 @@ endif
 
 set undofile
 set encoding=utf8
+set noshowcmd
 set nowrap
 set tabstop=4
 set shiftwidth=4
