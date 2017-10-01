@@ -33,9 +33,6 @@ $DIR/Wizards/Tmux.sh
 notify "Configuring GIT"
 $DIR/Wizards/GitSetup.sh
 
-notify "Mapping caps to escape"
-$DIR/Wizards/CapsToEscape.sh
-
 notify "Installing neovim"
 $DIR/Wizards/NeoVim.sh
 
