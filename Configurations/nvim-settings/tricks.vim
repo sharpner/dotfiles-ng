@@ -9,4 +9,5 @@ endfor
 " delete trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
 
+set tabstop=4 shiftwidth=4 expandtab
 set hidden
