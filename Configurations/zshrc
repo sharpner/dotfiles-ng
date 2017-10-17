@@ -17,6 +17,7 @@ export GOBIN=~/Development/Go/bin
 
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export PATH=$PATH:~/bin
+export PATH=$PATH:/Applications/Tex/TeXShop.app/Contents/Resources/TeXShop/bin
 export PATH=$GOBIN:/usr/local/bin:/usr/local/sbin:~/bin:$PATH
 
 # yarn global packages

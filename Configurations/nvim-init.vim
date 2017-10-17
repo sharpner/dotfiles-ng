@@ -53,6 +53,9 @@ Plug 'ternjs/tern_for_vim', { 'do': 'yarn install', 'on': ['TernDef', 'TernDoc',
 " linting setup
 Plug 'w0rp/ale'
 
+" tex setup
+Plug 'lervag/vimtex'
+
 " ################ colorscheme & eyecandy
 Plug 'morhetz/gruvbox'
 Plug 'ryanoasis/vim-devicons'
