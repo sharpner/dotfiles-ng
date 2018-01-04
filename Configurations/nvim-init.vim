@@ -9,7 +9,7 @@ Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'eugen0329/vim-esearch'
+Plug 'eugen0329/vim-esearch', { 'commit' : '36aeef56058a5a10fb7ab770e73ce74cf3867e92'}
 Plug 'editorconfig/editorconfig-vim', { 'on': [] }
 Plug 'mhinz/vim-startify'
 Plug 'vimwiki/vimwiki'
