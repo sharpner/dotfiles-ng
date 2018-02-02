@@ -69,8 +69,9 @@ Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }
 " ################ js specific
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'mxw/vim-jsx', { 'for': 'javascript' }
-Plug 'wwwdata/vim-flow', { 'for': 'javascript' }
 Plug 'elzr/vim-json', {'for' : 'json'}
+Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql'] }
+Plug 'autozimu/LanguageClient-neovim', { 'do': 'npm install -g javascript-typescript-langserver flow-language-server' }
 
 " ############### Dockerfile specific
 Plug 'ekalinin/Dockerfile.vim', { 'for' : 'Dockerfile' }
