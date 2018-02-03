@@ -266,5 +266,8 @@ key_bindings:
   - { key: Equals,                  chars: "\xB4"                        } # ´
   - { key: Equals,   mods: Shift,   chars: "\x60"                        } # `
   - { key: Space,    mods: Alt,     chars: "⦸"                           } # ⦸
+  - { key: Key0,     mods: Command, action: ResetFontSize                } # cmd + 0
+  - { key: RBracket, mods: Command, action: IncreaseFontSize             } # cmd + +
+  - { key: Slash,    mods: Command, action: DecreaseFontSize             } # cmd + -
 
 hide_cursor_when_typing: true
