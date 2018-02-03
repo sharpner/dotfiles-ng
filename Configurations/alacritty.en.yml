@@ -253,5 +253,8 @@ key_bindings:
   - { key: H,        mods: Alt,     chars: "\x1bh"                       }
   - { key: A,        mods: Alt,     chars: "\x1ba"                       } #
   - { key: Space,    mods: Alt,     chars: "⦸"                           } # ⦸
+  - { key: Key0,     mods: Command, action: ResetFontSize                } # cmd + 0
+  - { key: Equals,   mods: Command, action: IncreaseFontSize             } # cmd + +
+  - { key: Subtract, mods: Command, action: DecreaseFontSize             } # cmd + -
 
 hide_cursor_when_typing: true
