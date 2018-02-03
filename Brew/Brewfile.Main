@@ -10,6 +10,7 @@ brew 'go'
 brew 'gpg'
 brew 'gpg-agent'
 brew 'graphviz'
+brew 'diff-so-fancy'
 
 brew 'mas'
 brew 'mc'
