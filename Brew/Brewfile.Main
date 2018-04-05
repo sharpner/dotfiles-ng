@@ -4,6 +4,7 @@ brew 'ctags'
 brew 'docker'
 brew 'docker-compose'
 brew 'docker-machine'
+brew 'editorconfig'
 
 brew 'git'
 brew 'go'

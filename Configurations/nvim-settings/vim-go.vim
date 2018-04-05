@@ -8,7 +8,7 @@ let g:ale_go_gometalinter_options = '
   \ --disable=goconst
   \ '
 
-let g:ale_linters = {'javascript': ['eslint'], 'go': ['go build', 'gometalinter']}
+let g:ale_linters = {'javascript': ['eslint', 'flow'], 'go': ['go build', 'gometalinter']}
 let g:ale_set_highlights = 1
 let g:ale_set_signs = 1
 let g:ale_sign_column_always = 0
