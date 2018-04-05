@@ -15,6 +15,7 @@ Plug 'mhinz/vim-startify'
 Plug 'vimwiki/vimwiki'
 Plug 'ervandew/supertab'
 Plug 'tpope/vim-surround'
+Plug 'sheerun/vim-polyglot'
 
 " snippets for all programming languages
 Plug 'honza/vim-snippets'
