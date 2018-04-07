@@ -45,3 +45,6 @@ export HOMEBREW_NO_ANALYTICS=1
 if [ "$TMUX" = "" ]; then
     tmux attach -t alacritty || tmux new -s alacritty
 fi
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
