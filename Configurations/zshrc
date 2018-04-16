@@ -48,3 +48,6 @@ fi
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+export ANDROID_SDK_ROOT=~/Library/Android/sdk
+export ANDROID_HOME=~/Library/Android/sdk
+export PATH=$PATH:${ANDROID_SDK_ROOT}/emulator
