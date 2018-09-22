@@ -16,6 +16,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-surround'
 Plug 'sheerun/vim-polyglot'
 Plug 'ervandew/supertab'
+Plug 'majutsushi/tagbar'
 
 " Autocomplete
 Plug 'ncm2/ncm2'
@@ -68,10 +69,7 @@ Plug 'vim-airline/vim-airline-themes'
 
 " ################ go specific
 Plug 'fatih/vim-go', {'tag': '*', 'for': 'go', 'do': ':GoUpdateBinaries'}
-
-" ############### Dockerfile specific
-Plug 'ekalinin/Dockerfile.vim', { 'for' : 'Dockerfile' }
-
+"
 " ############### Dart specific
 Plug 'natebosch/dartlang-snippets'
 Plug 'dart-lang/dart-vim-plugin'
