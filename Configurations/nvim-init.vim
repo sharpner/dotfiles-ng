@@ -15,6 +15,7 @@ Plug 'mhinz/vim-startify'
 Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-surround'
 Plug 'sheerun/vim-polyglot'
+Plug 'ervandew/supertab'
 
 " Autocomplete
 Plug 'ncm2/ncm2'
@@ -74,9 +75,6 @@ Plug 'ekalinin/Dockerfile.vim', { 'for' : 'Dockerfile' }
 " ############### Dart specific
 Plug 'natebosch/dartlang-snippets'
 Plug 'dart-lang/dart-vim-plugin'
-let dart_format_on_save = 1
-let dart_style_guide = 2
-let dart_html_in_string=v:true
 
 call plug#end()
 

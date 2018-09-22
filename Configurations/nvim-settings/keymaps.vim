@@ -27,6 +27,8 @@ nnoremap <silent> gr :call LanguageClient#textDocument_references()<CR>
 nnoremap <leader>lm :call LanguageClient_contextMenu()<CR>
 nnoremap <leader>ls :call LanguageClient#textDocument_documentSymbol()<CR>
 nnoremap <leader>lS :call LanguageClient#workspace_symbol()<CR>
+
+nnoremap <silent> <A-cr> :call LanguageClient#textDocument_codeAction()<CR>
 nnoremap <silent> ga :call LanguageClient#textDocument_codeAction()<CR>
 nnoremap <silent> go :call LanguageClient#textDocument_documentSymbol()<CR>
 

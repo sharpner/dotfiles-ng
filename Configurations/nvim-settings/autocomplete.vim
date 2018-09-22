@@ -11,7 +11,6 @@ autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 au TextChangedI * call ncm2#auto_trigger()
 
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 imap <c-space> <Plug>(ncm2_manual_trigger)
 
 " c-j c-k for moving in snippet
