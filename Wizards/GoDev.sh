@@ -10,6 +10,7 @@ function setup {
     gometalinter --install && \
     go get -u -a golang.org/x/tools/cmd/godoc && \
     go get -u -a github.com/tools/godep
+    go get -u github.com/nsf/gocode
 
     return $?
 }
