@@ -8,14 +8,14 @@ let g:ale_go_gometalinter_options = '
   \ --disable=goconst
   \ '
 
-let g:ale_linters = {'javascript': ['eslint', 'flow'], 'go': ['go build', 'gometalinter']}
+let g:ale_linters = {'go': ['go build', 'gometalinter']}
 let g:ale_set_highlights = 1
 let g:ale_set_signs = 1
 let g:ale_sign_column_always = 0
 let g:ale_sign_error = '✖'
 let g:ale_sign_warning = '⚠'
 let g:ale_warn_about_trailing_whitespace = 1
-
+let g:ale_linters_explicit = 1
 let g:go_list_type = "locationlist"
 let g:go_statusline_duration = 3000
 let g:go_metalinter_enabled = [
