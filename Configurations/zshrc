@@ -42,12 +42,13 @@ export SAVEHIST=10000
 export HISTSIZE=10000
 export HOMEBREW_NO_ANALYTICS=1
 
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 if [ "$TMUX" = "" ]; then
     tmux attach -t alacritty || tmux new -s alacritty
 fi
 
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
 export ANDROID_SDK_ROOT=~/Library/Android/sdk
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=$PATH:${ANDROID_SDK_ROOT}/emulator:$HOME/Development/flutter/bin
