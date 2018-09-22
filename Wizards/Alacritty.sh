@@ -15,6 +15,7 @@ function setup {
     export PATH=$PATH:$HOME/.cargo/bin
     curl https://sh.rustup.rs -sSf | sh -s -- -y
     git clone https://github.com/jwilm/alacritty.git $FOLDER
+    git checkout v0.2.0
     rustup override set stable
     rustup update stable
     cd $FOLDER
