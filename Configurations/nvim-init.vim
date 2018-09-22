@@ -10,12 +10,22 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'eugen0329/vim-esearch', { 'commit' : '36aeef56058a5a10fb7ab770e73ce74cf3867e92'}
-Plug 'editorconfig/editorconfig-vim', { 'on': [] }
+Plug 'editorconfig/editorconfig-vim'
 Plug 'mhinz/vim-startify'
 Plug 'vimwiki/vimwiki'
-Plug 'ervandew/supertab'
 Plug 'tpope/vim-surround'
 Plug 'sheerun/vim-polyglot'
+
+" Autocomplete
+Plug 'ncm2/ncm2'
+Plug 'roxma/nvim-yarp'
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
+Plug 'ncm2/ncm2-ultisnips'
+Plug 'Shougo/echodoc.vim'
+
 
 " snippets for all programming languages
 Plug 'honza/vim-snippets'
@@ -56,10 +66,17 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " ################ go specific
-Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }
+Plug 'fatih/vim-go', {'tag': '*', 'for': 'go', 'do': ':GoUpdateBinaries'}
 
 " ############### Dockerfile specific
 Plug 'ekalinin/Dockerfile.vim', { 'for' : 'Dockerfile' }
+
+" ############### Dart specific
+Plug 'natebosch/dartlang-snippets'
+Plug 'dart-lang/dart-vim-plugin'
+let dart_format_on_save = 1
+let dart_style_guide = 2
+let dart_html_in_string=v:true
 
 call plug#end()
 
