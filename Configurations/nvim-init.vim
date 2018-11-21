@@ -14,7 +14,6 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'mhinz/vim-startify'
 Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-surround'
-Plug 'sheerun/vim-polyglot'
 Plug 'ervandew/supertab'
 Plug 'majutsushi/tagbar'
 
@@ -73,6 +72,9 @@ Plug 'fatih/vim-go', {'tag': '*', 'for': 'go', 'do': ':GoUpdateBinaries'}
 " ############### Dart specific
 Plug 'natebosch/dartlang-snippets'
 Plug 'dart-lang/dart-vim-plugin'
+
+" general languages
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
