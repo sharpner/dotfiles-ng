@@ -13,25 +13,6 @@ nmap <leader>m :NERDTreeToggle<CR>
 nmap <c-s> :NERDTreeFind<CR>
 nmap <leader>s :update<CR>
 
-
-
-" Alpha Bindings NCM
-nmap <C-Space> <Plug>(ncm2_manual_trigger)
-imap <C-Space> <Plug>(ncm2_manual_trigger)
-
-nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
-nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
-nnoremap <silent> gR :call LanguageClient#textDocument_rename()<CR>
-nnoremap <silent> gI :call LanguageClient#textDocument_implementation()<CR>
-nnoremap <silent> gr :call LanguageClient#textDocument_references()<CR>
-nnoremap <leader>lm :call LanguageClient_contextMenu()<CR>
-nnoremap <leader>ls :call LanguageClient#textDocument_documentSymbol()<CR>
-nnoremap <leader>lS :call LanguageClient#workspace_symbol()<CR>
-
-nnoremap <silent> <A-cr> :call LanguageClient#textDocument_codeAction()<CR>
-nnoremap <silent> ga :call LanguageClient#textDocument_codeAction()<CR>
-nnoremap <silent> go :call LanguageClient#textDocument_documentSymbol()<CR>
-
 " Alpha bindings - Copied
 nnoremap <leader>pf :GitFiles<CR>
 nnoremap <leader>p/ :Ag

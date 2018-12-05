@@ -18,15 +18,10 @@ Plug 'ervandew/supertab'
 Plug 'majutsushi/tagbar'
 
 " Autocomplete
-Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp'
-Plug 'autozimu/LanguageClient-neovim', {
-    \ 'branch': 'next',
-    \ 'do': 'bash install.sh',
-    \ }
-Plug 'ncm2/ncm2-ultisnips'
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
+Plug 'Shougo/denite.nvim'
 Plug 'Shougo/echodoc.vim'
-
+Plug 'neoclide/coc.nvim', {'do': 'yarn install'}
 
 " snippets for all programming languages
 Plug 'honza/vim-snippets'
