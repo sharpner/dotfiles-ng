@@ -22,8 +22,8 @@ nnoremap <leader>pc :Commands<CR>
 
 nnoremap <leader>ff :Files<CR>
 nnoremap <leader>ft :TagbarToggle<CR>
-"nmap <silent> <A-cr> <Plug>(coc-codeaction-selected)<CR>
-nmap <silent> ga <Plug>(coc-codeaction-selected)<CR>
+nmap <silent> gA <Plug>(coc-codeaction-selected)<CR>
+nmap <silent> ga <Plug>(coc-codeaction)<CR>
 
 " git
 nnoremap <leader>gb :Gblame<CR>
