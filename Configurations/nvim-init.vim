@@ -21,7 +21,6 @@ Plug 'majutsushi/tagbar'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
 Plug 'Shougo/denite.nvim'
 Plug 'Shougo/echodoc.vim'
-Plug 'neoclide/coc.nvim', {'do': 'yarn install'}
 
 " snippets for all programming languages
 Plug 'honza/vim-snippets'
@@ -68,8 +67,16 @@ Plug 'fatih/vim-go', {'tag': '*', 'for': 'go', 'do': ':GoUpdateBinaries'}
 Plug 'natebosch/dartlang-snippets'
 Plug 'dart-lang/dart-vim-plugin'
 
+" ############### JS
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
+Plug 'leafgarland/typescript-vim'
+
 " general languages
 Plug 'sheerun/vim-polyglot'
+Plug 'ap/vim-css-color'
+
 
 call plug#end()
 

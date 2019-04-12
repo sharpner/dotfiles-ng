@@ -47,9 +47,8 @@ autocmd CursorHoldI * silent! call CocActionAsync('showSignatureHelp')
 " Highlight symbol under cursor on CursorHold
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
-" Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
-vmap <leader>gA  <Plug>(coc-codeaction-selected)
-nmap <leader>gA  <Plug>(coc-codeaction-selected)
+vmap sw <Plug>(coc-codeaction-selected)
+nmap <leader>gA <Plug>(coc-codeaction-selected)
 
 nmap <silent> <C-]> <Plug>(coc-definition)
 nmap <silent> gR <Plug>(coc-rename)

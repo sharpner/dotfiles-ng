@@ -55,4 +55,5 @@ fi
 
 export ANDROID_SDK_ROOT=~/Library/Android/sdk
 export ANDROID_HOME=~/Library/Android/sdk
+export PATH=$PATH:~/Library/Android/sdk/platform-tools
 export PATH=$PATH:${ANDROID_SDK_ROOT}/emulator:~/Development/flutter/bin
