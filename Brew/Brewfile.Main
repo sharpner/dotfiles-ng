@@ -3,20 +3,17 @@ brew 'bazaar'
 brew 'ctags'
 brew 'docker'
 brew 'docker-compose'
-brew 'docker-machine'
 brew 'editorconfig'
 
 brew 'git'
 brew 'go'
 brew 'gpg'
-brew 'gpg-agent'
 brew 'graphviz'
 brew 'diff-so-fancy'
 
 brew 'mas'
 brew 'mc'
 brew 'mercurial'
-brew 'mongodb'
 
 brew 'neovim'
 
