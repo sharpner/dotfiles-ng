@@ -31,6 +31,7 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <silent> lf <Plug>(coc-diagnostic-next)
 nmap <silent> lF <Plug>(coc-diagnostic-prev)
+nmap <silent> ge <Plug>(coc-refactor)
 
 " Use K for show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>

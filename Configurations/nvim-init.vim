@@ -15,7 +15,7 @@ Plug 'mhinz/vim-startify'
 Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-surround'
 Plug 'ervandew/supertab'
-Plug 'majutsushi/tagbar'
+Plug 'liuchengxu/vista.vim'
 
 " Autocomplete
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
@@ -51,7 +51,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'junegunn/vim-fnr'
 
 " linting setup
-Plug 'w0rp/ale'
+"Plug 'w0rp/ale'
 
 " ################ colorscheme & eyecandy
 Plug 'morhetz/gruvbox'
@@ -65,7 +65,8 @@ Plug 'fatih/vim-go', {'tag': '*', 'for': 'go', 'do': ':GoUpdateBinaries'}
 "
 " ############### Dart specific
 Plug 'natebosch/dartlang-snippets'
-Plug 'dart-lang/dart-vim-plugin'
+Plug 'dart-lang/dart-vim-plugin', {'commit': 'db57ccbdea521d22939dfcf129d3a37e9328d16b'}
+
 
 " ############### JS
 Plug 'prettier/vim-prettier', {
