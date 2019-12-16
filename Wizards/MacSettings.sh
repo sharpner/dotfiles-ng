@@ -50,7 +50,7 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 #disable startup sound
 sudo nvram SystemAudioVolume=%80
 
-defaults write -g com.apple.screencapture show-thumbnail -bool FALSE
+defaults write com.apple.screencapture show-thumbnail -bool FALSE
 
 # keyboard delay
 defaults write -g InitialKeyRepeat -int 15 # normal minimum is 15 (225 ms)
