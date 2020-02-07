@@ -37,9 +37,10 @@ Plug 'junegunn/vim-pseudocl'
 Plug 'junegunn/vim-oblique'
 
 " git integration
-Plug 'tpope/vim-fugitive'
-Plug 'junegunn/gv.vim'
-Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'tpope/vim-fugitive' " general git integration
+Plug 'junegunn/gv.vim' " git commit browser
+Plug 'Xuyuanp/nerdtree-git-plugin' " display git changes in nerdtree
+Plug 'samoshkin/vim-mergetool' " advanced merging
 
 " view vim registers e.g. for pasting
 Plug 'junegunn/vim-peekaboo'
@@ -65,7 +66,7 @@ Plug 'fatih/vim-go', {'tag': '*', 'for': 'go', 'do': ':GoUpdateBinaries'}
 "
 " ############### Dart specific
 Plug 'natebosch/dartlang-snippets'
-Plug 'dart-lang/dart-vim-plugin', {'commit': 'db57ccbdea521d22939dfcf129d3a37e9328d16b'}
+Plug 'dart-lang/dart-vim-plugin'
 
 
 " ############### JS
