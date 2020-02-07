@@ -51,8 +51,8 @@ Plug 'christoomey/vim-tmux-navigator'
 " find and replace helper
 Plug 'junegunn/vim-fnr'
 
-" linting setup
-"Plug 'w0rp/ale'
+" Markdown
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 
 " ################ colorscheme & eyecandy
 Plug 'morhetz/gruvbox'
