@@ -12,6 +12,7 @@ nnoremap <leader>ff :Files<CR>
 nmap <c-s> :NERDTreeFind<CR>
 nmap <leader>s :update<CR>
 nmap <leader>T :Vista!!<CR>
+nmap <leader>vf :Vista finder<CR>
 
 " Alpha bindings - Copied
 nnoremap <leader>pf :GitFiles<CR>
