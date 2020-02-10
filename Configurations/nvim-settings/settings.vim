@@ -2,7 +2,7 @@ set relativenumber
 set encoding=utf-8 nobomb
 set binary
 set spell
-set colorcolumn=120
+set colorcolumn=80
 
 set backupdir=~/.vim/backups
 set directory=~/.vim/swaps
