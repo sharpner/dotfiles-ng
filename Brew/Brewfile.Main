@@ -3,6 +3,8 @@ brew 'bazaar'
 brew 'docker'
 brew 'docker-compose'
 brew 'editorconfig'
+brew 'bat'
+brew 'delta'
 
 brew 'git'
 brew 'go'

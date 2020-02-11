@@ -40,6 +40,7 @@ alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Si
 alias vnc='open /System/Library/CoreServices/Applications/Screen\ Sharing.app/'
 alias strace='sudo dtruss -t open_nocancel -p'
 alias lsusb='system_profiler SPUSBDataType'
+alias cat=bat
 
 export TERM=screen-256color-bce
 export SAVEHIST=10000
