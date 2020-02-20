@@ -16,7 +16,6 @@ Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-surround'
 Plug 'ervandew/supertab'
 Plug 'liuchengxu/vista.vim' " language server symbols tagbar
-Plug 'brooth/far.vim' " find and replace
 
 " Autocomplete
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}

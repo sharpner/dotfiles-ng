@@ -41,8 +41,6 @@ nnoremap <leader>gw :Gwrite<CR>
 call esearch#map('<leader>ff', 'esearch')
 
 
-" Far
-nnoremap <leader>F :Farp<CR>
-nnoremap <leader>Fd :Fardo<CR>
+nnoremap <leader>F :CocSearch<SPACE>
 
 
