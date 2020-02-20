@@ -8,10 +8,12 @@ noremap <Right> <NOP>
 
 nnoremap <leader>bb :Buffers<CR>
 
-nmap <c-s> :NERDTreeFind<CR>
+nmap <leader>l :NERDTreeFind<CR>
+nmap <leader>k :NERDTreeToggle<CR>
 nmap <leader>s :update<CR>
 nmap <leader>T :Vista!!<CR>
 nmap <leader>vf :Vista finder<CR>
+nmap <c-s> <Esc>:w<CR>
 
 " Alpha bindings - Copied
 nnoremap <leader>pg :GitFiles<CR>

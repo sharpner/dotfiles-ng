@@ -26,3 +26,5 @@ brew 'tmux'
 brew 'tree'
 brew 'watch'
 brew 'wget'
+
+brew 'ripgrep'
