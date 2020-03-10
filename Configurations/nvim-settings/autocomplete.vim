@@ -59,6 +59,11 @@ nmap <silent> gI <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <silent> ga <Plug>(coc-codeaction)
 
+nmap <silent> gl :CocList <CR>
+nmap <silent> go :CocList outline<CR>
+nmap <silent> gL :CocListResume <CR>
+
+
 " note that you must keep `noinsert` in completeopt, you must not use
 " `longest`. The others are optional. Read `:help completeopt` for
 " more info
