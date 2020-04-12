@@ -13,8 +13,6 @@ dpi:
   x: 96.0
   y: 96.0
 
-# Display tabs using this many cells (changes require restart)
-tabspaces: 8
 
 # When true, bold text is drawn using the bright variant of colors.
 draw_bold_text_with_bright_colors: true
@@ -50,8 +48,8 @@ font:
   use_thin_strokes: false
 
 # Should display the render timer
-  debug:
-    render_timer: false
+debug:
+  render_timer: false
 
 # disable visual bell
 visual_bell:

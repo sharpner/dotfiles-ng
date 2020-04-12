@@ -1,3 +1,5 @@
+brew 'node'
+brew 'yarn'
 brew 'ag'
 brew 'bazaar'
 brew 'docker'
