@@ -54,7 +54,7 @@ if [ "$TMUX" = "" ]; then
     tmux attach -t alacritty || tmux new -s alacritty
 fi
 
-export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
+export ANDROID_SDK_ROOT=${HOME}/Library/Android/sdk
 export ANDROID_HOME=${ANDROID_SDK_ROOT}
 export PATH=$PATH:${ANDROID_SDK_ROOT}/tools
 export PATH=$PATH:~/Development/flutter/bin
