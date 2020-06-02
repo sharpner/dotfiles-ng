@@ -18,7 +18,7 @@ Plug 'ervandew/supertab'
 Plug 'liuchengxu/vista.vim' " language server symbols tagbar
 
 " Autocomplete
-Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Shougo/denite.nvim'
 Plug 'Shougo/echodoc.vim'
 
