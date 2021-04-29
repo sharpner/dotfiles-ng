@@ -75,8 +75,6 @@ Plug 'prettier/vim-prettier', {
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 Plug 'leafgarland/typescript-vim'
 
-" general languages
-Plug 'sheerun/vim-polyglot'
 Plug 'ap/vim-css-color'
 
 
@@ -87,3 +85,5 @@ for f in split(glob('~/.config/nvim/nvim-settings/*.vim'), '\n')
     exe 'source' f
 endfor
 
+" general languages
+Plug 'sheerun/vim-polyglot'
