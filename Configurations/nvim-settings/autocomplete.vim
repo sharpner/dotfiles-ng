@@ -78,7 +78,7 @@ let g:UltiSnipsExpandTrigger		= "<Plug>(ultisnips_expand)"
 let g:UltiSnipsJumpForwardTrigger	= "<c-j>"
 let g:UltiSnipsJumpBackwardTrigger	= "<c-k>"
 let g:UltiSnipsRemoveSelectModeMappings = 0
-let g:UltiSnipsSnippetsDir="~/.dotfiles-ng/vim/ultisnips"
+let g:UltiSnipsSnippetsDir="~/.vim/snippets"
 
 let g:LanguageClient_serverCommands = {
     \ 'dart': ['dart_language_server'],

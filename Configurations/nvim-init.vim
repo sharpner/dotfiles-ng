@@ -31,6 +31,7 @@ Plug 'airblade/vim-rooter'
 
 " display vim marks
 Plug 'kshenoy/vim-signature'
+Plug 'SirVer/ultisnips'
 
 " realtime search
 Plug 'junegunn/vim-pseudocl'
