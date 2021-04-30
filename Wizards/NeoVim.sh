@@ -23,7 +23,7 @@ function setup {
     ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/VimWiki ~/vimwiki && \
 
     nvim +PlugUpdate +silent +qall
-    nvim +"CocInstall coc-flutter coc-ultisnips" +silent +qall
+    nvim +"CocInstall coc-go coc-pyright coc-tsserver coc-flutter coc-ultisnips" +silent +qall
     return $?
 }
 
