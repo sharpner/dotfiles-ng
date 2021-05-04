@@ -60,6 +60,7 @@ nmap <silent> gr <Plug>(coc-references)
 nmap <silent> ga <Plug>(coc-codeaction)
 
 nmap <silent> gl :CocList <CR>
+nmap <silent> gt :CocList diagnostics<CR>
 nmap <silent> go :CocList outline<CR>
 nmap <silent> gL :CocListResume <CR>
 

@@ -35,7 +35,7 @@ alias cd='cd -P'
 alias vim=nvim
 
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; git -C ~/.dotfiles-ng pull --rebase'
-alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+alias afk="osascript -e 'tell app \"System Events\" to key code 12 using {control down, command down}'"
 alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
 alias vnc='open /System/Library/CoreServices/Applications/Screen\ Sharing.app/'
 alias strace='sudo dtruss -t open_nocancel -p'
