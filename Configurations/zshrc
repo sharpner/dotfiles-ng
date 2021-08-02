@@ -60,6 +60,7 @@ export ANDROID_HOME=${ANDROID_SDK_ROOT}
 export PATH=$PATH:${ANDROID_SDK_ROOT}/tools
 export PATH=$PATH:~/Development/flutter/bin
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
+export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
 
 
 # rust
