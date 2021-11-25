@@ -1,5 +1,5 @@
 # zmodload zsh/zprof
-plugins=(z git osx vi-mode per-directory-history dirhistory)
+plugins=(z git macos vi-mode per-directory-history dirhistory)
 
 export ZSH_THEME="arrow"
 export ZSH=~/.oh-my-zsh
@@ -34,7 +34,7 @@ alias top="top -o cpu"
 alias cd='cd -P'
 alias vim=nvim
 
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; git -C ~/.dotfiles-ng pull --rebase'
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; git -C ~/.dotfiles pull --rebase'
 alias afk="osascript -e 'tell app \"System Events\" to key code 12 using {control down, command down}'"
 alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
 alias vnc='open /System/Library/CoreServices/Applications/Screen\ Sharing.app/'
@@ -51,18 +51,23 @@ export HOMEBREW_NO_ANALYTICS=1
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+export ANDROID_SDK_ROOT=${HOME}/Library/Android/sdk
+export ANDROID_HOME=${ANDROID_SDK_ROOT}
+export PATH=$PATH:~/.local/bin
+export PATH=$PATH:${ANDROID_SDK_ROOT}/tools
+export PATH=$HOME/bin:/opt/homebrew/bin:$PATH
+export PATH=$PATH:~/Development/flutter/bin
+export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
+
+
+
 if [ "$TMUX" = "" ]; then
     tmux attach -t alacritty || tmux new -s alacritty
 fi
 
-export ANDROID_SDK_ROOT=${HOME}/Library/Android/sdk
-export ANDROID_HOME=${ANDROID_SDK_ROOT}
-export PATH=$PATH:${ANDROID_SDK_ROOT}/tools
-export PATH=$PATH:~/Development/flutter/bin
-export PATH="/usr/local/opt/openjdk/bin:$PATH"
-export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
+intel() {
+  arch -x86_64 $@
+}
 
-
-# rust
-source $HOME/.cargo/env
-
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
