@@ -6,6 +6,7 @@ brew 'docker'
 brew 'docker-compose'
 brew 'editorconfig'
 brew 'bat'
+brew 'cmake'
 brew 'delta'
 
 brew 'git'
