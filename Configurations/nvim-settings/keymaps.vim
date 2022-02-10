@@ -28,7 +28,7 @@ nmap <silent> gA <Plug>(coc-codeaction-selected)<CR>
 nmap <silent> ga <Plug>(coc-codeaction)<CR>
 
 " git
-nnoremap <leader>gb :Gblame<CR>
+nnoremap <leader>gb :Git blame<CR>
 nnoremap <leader>gc :Gcommit<CR>
 nnoremap <leader>gd :Gdiff<CR>
 nnoremap <leader>ge :Gedit<CR>
