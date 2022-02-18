@@ -21,7 +21,7 @@ export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export PATH=$PATH:~/bin
 export PATH=$PATH:/Applications/Tex/TeXShop.app/Contents/Resources/TeXShop/bin
 export PATH=$GOBIN:/usr/local/bin:/usr/local/sbin:~/bin:$PATH
-export PATH=$PATH:~/Development/flutter/bin:~/Development/flutter/bin/cache/dart-sdk/bin/
+export PATH=$PATH:~/Development/flutter/bin:~/Development/flutter/bin/cache/dart-sdk/bin/:~/fvm/default/bin
 export PATH=$PATH:~/.pub-cache/bin
 
 # yarn global packages
