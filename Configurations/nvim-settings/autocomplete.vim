@@ -33,6 +33,8 @@ nmap <silent> lf <Plug>(coc-diagnostic-next)
 nmap <silent> lF <Plug>(coc-diagnostic-prev)
 nmap <silent> ge <Plug>(coc-refactor)
 
+"nnoremap <silent> <space>o       :<C-u>CocFzfList outline<CR>
+
 " Use K for show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
@@ -51,19 +53,22 @@ autocmd CursorHoldI * silent! call CocActionAsync('showSignatureHelp')
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 vmap sw <Plug>(coc-codeaction-selected)
-nmap <leader>gA <Plug>(coc-codeaction-selected)
+"nmap <leader>gA <Plug>(coc-codeaction-selected)
 
 nmap <silent> <C-]> <Plug>(coc-definition)
 nmap <silent> gR <Plug>(coc-rename)
 nmap <silent> gI <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
-nmap <silent> ga <Plug>(coc-codeaction)
+"nmap <silent> ga <Plug>(coc-codeaction)
+"nnoremap <silent> ga       :<C-u>CocFzfList actions<CR>
 
 nmap <silent> gl :CocList <CR>
-nmap <silent> gt :CocList diagnostics<CR>
-nmap <silent> go :CocList outline<CR>
+nmap <silent> gt :CocFzfList diagnostics<CR>
+nmap <silent> go :CocFzfList outline<CR>
+nmap <silent> xx :CocFzfList actions<CR>
 nmap <silent> gL :CocListResume <CR>
 
+"call coc_fzf#common#add_list_source('fzf-buffers', 'display open buffers', 'Buffers')
 
 " note that you must keep `noinsert` in completeopt, you must not use
 " `longest`. The others are optional. Read `:help completeopt` for

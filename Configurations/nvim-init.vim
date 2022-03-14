@@ -19,6 +19,7 @@ Plug 'liuchengxu/vista.vim' " language server symbols tagbar
 
 " Autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
 Plug 'Shougo/denite.nvim'
 Plug 'Shougo/echodoc.vim'
 
