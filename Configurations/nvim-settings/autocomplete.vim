@@ -65,7 +65,7 @@ nmap <silent> gr <Plug>(coc-references)
 nmap <silent> gl :CocList <CR>
 nmap <silent> gt :CocFzfList diagnostics<CR>
 nmap <silent> go :CocFzfList outline<CR>
-nmap <silent> xx :CocFzfList actions<CR>
+nmap <silent> zx :CocFzfList actions<CR>
 nmap <silent> gL :CocListResume <CR>
 
 "call coc_fzf#common#add_list_source('fzf-buffers', 'display open buffers', 'Buffers')
