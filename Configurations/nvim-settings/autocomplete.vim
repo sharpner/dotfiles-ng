@@ -62,9 +62,9 @@ nmap <silent> gr <Plug>(coc-references)
 "nmap <silent> ga <Plug>(coc-codeaction)
 "nnoremap <silent> ga       :<C-u>CocFzfList actions<CR>
 
-nmap <silent> gl :CocList <CR>
-nmap <silent> gt :CocFzfList diagnostics<CR>
-nmap <silent> go :CocFzfList outline<CR>
+nmap <silent> zb :CocList <CR>
+nmap <silent> zv :CocFzfList diagnostics<CR>
+nmap <silent> zc :CocFzfList outline<CR>
 nmap <silent> zx :CocFzfList actions<CR>
 nmap <silent> gL :CocListResume <CR>
 

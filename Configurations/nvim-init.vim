@@ -63,8 +63,6 @@ Plug 'junegunn/vim-emoji'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-" ################ go specific
-Plug 'fatih/vim-go', {'tag': '*', 'for': 'go', 'do': ':GoUpdateBinaries'}
 "
 " ############### Dart specific
 Plug 'natebosch/dartlang-snippets'
