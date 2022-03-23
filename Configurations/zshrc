@@ -56,7 +56,6 @@ export ANDROID_HOME=${ANDROID_SDK_ROOT}
 export PATH=$PATH:~/.local/bin
 export PATH=$PATH:${ANDROID_SDK_ROOT}/tools
 export PATH=$HOME/bin:/opt/homebrew/bin:$PATH
-export PATH=$PATH:~/Development/flutter/bin
 export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
 
 
