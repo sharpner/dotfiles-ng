@@ -33,6 +33,7 @@ alias map="xargs -n1"
 alias top="top -o cpu"
 alias cd='cd -P'
 alias vim=nvim
+alias icloud='cd $HOME/Library/Mobile\ Documents/com~apple~CloudDocs/'
 
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; git -C ~/.dotfiles pull --rebase'
 alias afk="osascript -e 'tell app \"System Events\" to key code 12 using {control down, command down}'"
