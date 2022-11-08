@@ -13,7 +13,7 @@ nmap <leader>k :NERDTreeToggle<CR>
 nmap <leader>s :update<CR>
 nmap <leader>T :Vista!!<CR>
 nmap <leader>vf :Vista finder<CR>
-nmap <c-s> <Esc>:w<CR>
+nnoremap <C-s> :update<CR>
 
 " Alpha bindings - Copied
 nnoremap <leader>pg :GitFiles<CR>
