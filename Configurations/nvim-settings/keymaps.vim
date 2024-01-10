@@ -45,4 +45,5 @@ call esearch#map('<leader>ff', 'esearch')
 
 nnoremap <leader>F :CocSearch<SPACE>
 
-
+nmap <c-[> <Plug>(copilot-next)<CR>
+nmap <c-]> <Plug>(copilot-prev)<CR>

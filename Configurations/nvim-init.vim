@@ -32,7 +32,6 @@ Plug 'airblade/vim-rooter'
 
 " display vim marks
 Plug 'kshenoy/vim-signature'
-Plug 'SirVer/ultisnips'
 
 " realtime search
 Plug 'junegunn/vim-pseudocl'
@@ -69,6 +68,12 @@ Plug 'natebosch/dartlang-snippets'
 Plug 'dart-lang/dart-vim-plugin'
 
 
+"svelte
+Plug 'othree/html5.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'evanleck/vim-svelte', {'branch': 'main'}
+
+
 " ############### JS
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
@@ -76,6 +81,7 @@ Plug 'prettier/vim-prettier', {
 Plug 'leafgarland/typescript-vim'
 
 Plug 'ap/vim-css-color'
+Plug 'github/copilot.vim'
 
 
 call plug#end()

@@ -76,14 +76,8 @@ nmap <silent> gL :CocListResume <CR>
 set completeopt=noinsert,menuone,noselect,preview
 set shortmess+=c
 
-" c-j c-k for moving in snippet
-imap <c-u> <Plug>(ultisnips_expand)
 "
 " enter for snippet expand
-let g:UltiSnipsExpandTrigger		= "<Plug>(ultisnips_expand)"
-let g:UltiSnipsJumpForwardTrigger	= "<c-j>"
-let g:UltiSnipsJumpBackwardTrigger	= "<c-k>"
-let g:UltiSnipsRemoveSelectModeMappings = 0
 let g:UltiSnipsSnippetsDir="~/.vim/snippets"
 
 let g:LanguageClient_serverCommands = {

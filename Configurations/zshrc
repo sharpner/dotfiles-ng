@@ -43,6 +43,7 @@ alias strace='sudo dtruss -t open_nocancel -p'
 alias lsusb='system_profiler SPUSBDataType'
 alias cat=bat
 alias rip="git branch | grep -v main | grep -v '\*' | xargs -n1 git branch -D"
+alias fluttervim="flutter run --pid-file /tmp/flutter.pid"
 
 export TERM=screen-256color-bce
 export SAVEHIST=10000
@@ -89,4 +90,10 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /Users/nwagensonner/.dart-cli-completion/zsh-config.zsh ]] && . /Users/nwagensonner/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
 

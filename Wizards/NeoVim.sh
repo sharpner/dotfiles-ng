@@ -18,7 +18,6 @@ function setup {
 
     ln -sF $CONFIG_DIR/nvim-settings ~/.config/nvim && \
     ln -sF $CONFIG_DIR/nvim-init.vim ~/.config/nvim/init.vim && \
-    ln -sF $CONFIG_DIR/nvim-ftplugin ~/.config/nvim/ftplugin && \
 
     ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/VimWiki ~/vimwiki && \
 
