@@ -1,5 +1,4 @@
 cask 'vlc'
-cask 'beamer'
 cask 'little-snitch'
 cask 'micro-snitch'
 cask 'beamer'
